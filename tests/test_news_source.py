@@ -11,7 +11,7 @@ class TestSource(unittest.TestCase):
     def test_instance(self):
         self.assertTrue(isinstance(self.new_source,Source))
 
-    
+
     def test_init(self):
         self.assertEqual(self.new_source.id,"bloomberg")
         self.assertEqual(self.new_source.name,"bloomberg")
