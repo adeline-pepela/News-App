@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+
+<!--Content block-->
+{% block content %}
+    <!--Business News-->
+    <div class="container">
+        <form>
+            <input type="text" placeholder="Enter a search term" name="q" class="form-control">
+            <input type="submit" value="Submit" class="btn btn-default">
+        </form>
+    </div>
+
+    <div class="container">
+        <h1>Your Favorite News Sources</h1>
+        
+        <ul class="bg warning">
+            {{ macro.displaySourceList(sources) }}
+        </ul>
+    </div>
+    
+{% endblock %}
