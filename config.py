@@ -1,6 +1,5 @@
 import os
 
-
 class Config:
     NEWS_API_BASE_URL = "https://newsapi.org/v2/top-headlines/sources?apiKey={}"
     ARTICLE_URL = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'
