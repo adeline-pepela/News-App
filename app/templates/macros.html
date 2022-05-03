@@ -4,9 +4,11 @@
     <div class="col-md-3">
         
         <div class=" source-card card mb-4  bg-dark text-white"  >
-           <img src=" {{img}} " class="card-img image-fluid" alt="news-image"> 
+           <img src=" {{img}} " class="card-img image-fluid" alt="news-image">  
                 <a href="{{source.url}}">{{ source.name| truncate(20) }}</a>
                 <p>{{ source.description }}</p>
+                 <p> Written by: {{ source.author }}</p> 
+                <i>Published on: {{ source.publishedAt }}</i> 
             
         </div>
     </div>
