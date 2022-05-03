@@ -31,8 +31,15 @@ def news(source_id):
     title = 'Here are the search results'
     return render_template('news.html',title=title, articles=articles)
 
+
+@main.route('//<source_id>')
+def health(source_id):
+    articles = get_articles(source_id)
+    title = 'Here are the search results'
+    return render_template('health.html',title=title, articles=articles)
+
 # @main.route('/health')
-# def health():
+# def health(source_id):
 #     sources = healthArticles()
 
 #     return  render_template('health.html', sources = sources)
